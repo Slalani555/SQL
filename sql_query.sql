@@ -13,4 +13,3 @@ FROM retention
 GROUP BY year_month
 WINDOW w as (ORDER BY to_char(new_subscriber_cohort, 'YYYY-Mon'))
 ORDER BY year_month ASC;
-;
